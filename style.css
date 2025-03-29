@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+button:hover {
+    cursor: pointer;
+}
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: var(--dark-cyan);
+}
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+/*Header*/
+header {
+    background-image: url("./images/bg-hero-mobile.svg");
+    background-color: var(--pale-cyan);
+    padding: 40px 60px;
+}
+@media (min-width: 1400px) {
+    header {
+        background-image: url("./images/bg-hero-desktop.svg");
+    }
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.nav-bar img {
+    width: 200px;
+    height: auto;
+}
+.nav-bar button {
+    border: none;
+    background-color: white;
+    color: var(--dark-cyan);
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 7px;
+}
+header main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header main img {
+    width: 50%;
+    height: auto;
+}
+header main .text h1 {
+    font-size: 45px;
+}
+header main .text p {
+    font-size: 22px;
+    font-weight: 400;
+}
+header main .text button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: var(--pink);
+    border-radius: 30px;
+}
+/*Main Section*/
+section {
+    margin: 100px 0;
+    position: relative;
+}
+section .card {
+    display: flex;
+    width: 85%;
+    margin: 0 auto 50px;
+    box-shadow: rgb(0 0 0 / 0.2 ) 0 0px 15px;
+    border-radius: 10px;
+    padding: 60px;
+}
+section .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+section .card img {
+    width: 500px;
+    height: auto;
+}
+/*the square thing*/
+section .sect {
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .sect button {
+    border: none;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background: var(--pink);
+    border-radius: 30px;
+}
